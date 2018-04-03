@@ -106,6 +106,9 @@
     .color-green {
         color: #01a2a6;
     }
+    .light-green-text {
+        color: #29d9c2;
+    }
     
     .slider .slogan .text-slogan {
         font-family: Lato;
@@ -156,7 +159,6 @@
     
     .head {
         font-family: ChunkFive;
-        color: #29d9c2;
         font-size: 3.749em;
         font-weight: 400;
     }
@@ -403,35 +405,27 @@
         padding-top: 30px;
         min-height: 44px;
         font-family: Lato;
-        color: #29d9c2;
         font-size: 1.125em;
         font-weight: 900;
         line-height: 9.895px;
     }   
     .set_ittinery .compiled .heading {
-        padding-top: 30px;
-        min-height: 44px;
         background-image: url(../img/green-mount.jpg);
-        font-family: Lato;
         color: #ffffff;
-        font-size: 1.125em;
-        font-weight: 900;
-        line-height: 9.895px;
     }
-    
-    .set_ittinery .compiled .box {
+    .set_ittinery .box{
         min-height: 567px;
         border-radius: 5px;
+        padding: 28px 36.5px 36.5px 36.5px;
+    }
+    .set_ittinery .compiled .box {
         background-color: #ffffa6;
-        padding: 36.5px;
     }
     
     .set_ittinery .compiled .field {
         height: 70px;
+        border: 1px solid #d5d57d;        
         border-radius: 5px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #d5d57d;
         background-color: #ffffff;
     }
     
@@ -452,23 +446,19 @@
     .set_ittinery .compiled .day {
         float: left;
         font-family: Lato;
-        color: #29d9c2;
         font-size: 0.999rem;
         font-weight: 900;
         line-height: 0.619;
     }
-    
+
     .set_ittinery .compiled .day1 {
-        margin-top: -10.5px;
         margin-bottom: 18px;
     }
     
     .set_ittinery .compiled .date {
         float: right;
         min-width: 120px;
-        height: 40px;
         font-family: Lato;
-        color: #29d9c2;
         font-size: 0.999rem;
         font-weight: 800;
         background-color: transparent;
@@ -476,7 +466,6 @@
     }
     
     .set_ittinery .compiled .date1 {
-        margin-top: -28.5px;
     }
     
     .set_ittinery .compiled .field {
@@ -499,10 +488,9 @@
     }
     
     .set_ittinery .compiled .field .time {
-        float: left;
+        float: right;
         width: 90px;
-        height: 42px;
-        padding-top: 28px;
+        padding-top: 30px;
         padding-right: 10px;
         font-family: Lato;
         color: #a8a8a8;
@@ -586,8 +574,7 @@
     
     .set_ittinery .compiled .drag-destination {
         clear: both;
-        margin-top: 127px;
-        height: 70px;
+        padding: 30px 0;
         border: 3px dashed #e8e897;
         border-radius: 5px;
         color: #d8cb7d;
@@ -639,9 +626,87 @@
     }
     
    .set_ittinery .compiled .button-print:hover {
-   background-color: #bdf271;
-}
+        background-color: #bdf271;
+    }
 
    .set_ittinery .right_column{
-    float: right;
-}
+        float: right;
+    }
+   .set_ittinery .right_column .sort p{
+        float: left;
+        font-family: Lato;
+        font-size: 0.999rem;
+        font-weight: 900;
+        line-height: 0.619;
+    }
+    .sort_by {
+        color: #bcbcbc;
+        font-weight: 500;
+    }
+   .set_ittinery .right_column .search{
+        float: right;
+    }
+    .set_ittinery .right_column .field {
+        position: relative;
+        margin-bottom: 17px;
+        clear: both;
+        height: 46px;
+        border: 1px solid #e8e8e8;     
+        border-radius: 5px;
+        box-shadow: 0 3px 10px -3px #e8e8e8;
+        background-color: #ffffff;
+        padding: 12px;
+    }
+    .set_ittinery .right_column .blocks {
+        margin-top: 27px;
+    }
+
+    .set_ittinery .right_column .name_destination{
+        float: left;
+        margin-top: 5px;
+        font-family: Lato;
+        color: #626262;
+        font-size: 1.501rem;
+        font-weight: 300;
+        line-height: 0.412;
+    }
+    .set_ittinery .right_column .time {
+        clear: both;
+        float: left;
+        padding-top: 18px;
+    }
+    .set_ittinery .right_column .name-time{
+        font-family: Lato;
+        color:  #b9b9b9;
+        font-size: 0.876rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 300;
+        line-height: 0.706;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .set_ittinery .right_column .result-time{
+        color:  #23c6b6;
+        font-size: 0.876rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 500;
+        line-height: 0.706;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .set_ittinery .right_column .block-icon{
+        float: right;
+        width: 6em;
+        position: absolute;
+        top: 4px;
+        right: 0;
+    }
+    .set_ittinery .right_column .icon{
+        max-width: 63px;
+    }
+    .set_ittinery .right_column .details{
+        .font-size: 0.876rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        line-height: 0.706;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        top: 44px;
+        right: 7px;
+        float: right;
+        position: absolute;
+    }
