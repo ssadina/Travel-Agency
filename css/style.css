@@ -710,3 +710,8 @@
         float: right;
         position: absolute;
     }
+
+    .contact {
+        background-color: #30b4b7;
+        opacity: 0.5;
+    }
