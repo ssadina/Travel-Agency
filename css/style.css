@@ -11,7 +11,11 @@
         width: 1442px;
         margin: 0 auto;
     }
-    
+    @font-face{
+        font-family: "ChunkFive";
+        src: url("../fonts/ChunkFive.ttf");
+    }
+
     .slider {
         height: 737px;
         background: #9bddd8 url(../img/Malang.jpg) no-repeat;
@@ -92,7 +96,7 @@
     
     .slider .slogan {
         clear: both;
-        margin: 109px 400px 0 400px;
+        margin-top: 109px;
         font-family: ChunkFive;
         color: #ffffff;
         text-align: center;
@@ -381,6 +385,7 @@
     .set_ittinery {
         text-align: center;
         padding-top: 72px;
+        margin-bottom: 57px;
     }
     
     .set_ittinery .head {
@@ -712,6 +717,47 @@
     }
 
     .contact {
-        background-color: #30b4b7;
-        opacity: 0.5;
+        background-image: url(../img/map_feedback.jpg);
+    }
+    .contact h1{
+        padding-top: 89px;
+        padding-bottom: 111px;
+        text-align: center;
+        font-family: ChunkFive;
+        color:  #ffffff;
+        font-size: 4.187rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 0.148;
+    }
+    .contact .form_feedback #email_field {
+        height: 55px;
+        width: 469px;
+        border-radius: 5px;
+    }
+    .contact .form_feedback {
+        width: 36%;
+        float: left;
+        padding-left: 9%;
+    }
+    .contact .or{
+        float: left;
+        width: 10%;
+        font-family: Montserrat;
+        color:  #ffffff;
+        font-size: 0.875rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 1.714;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .contact .info{
+        width: 45%;
+        float: left;
+        font-family: Lato;
+        color:  #ffffff;
+        font-size: 2.764rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 300;
+        text-align: center;
+    }
+    .contact .clearfix{
+        clear:both;
     }
