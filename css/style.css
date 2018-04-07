@@ -588,7 +588,7 @@
     }
     
    
-    .set_ittinery .compiled .button {
+    .button {
         float: right;
         border-radius: 30px;
         color: #fff;
@@ -729,16 +729,48 @@
         font-weight: 400;
         line-height: 0.148;
     }
-    .contact .form_feedback #email_field {
-        height: 55px;
-        width: 469px;
-        border-radius: 5px;
-    }
     .contact .form_feedback {
         width: 36%;
         float: left;
         padding-left: 9%;
     }
+    .contact .form_feedback #email_field {
+        height: 55px;
+        width: 444px;
+        border-radius: 5px;
+        padding-left: 25px;
+    }
+    .contact .form_feedback #company_field{
+        padding-left: 25px;
+        border-radius: 5px;
+        margin-top: 21px;
+        margin-right: 11px;
+        width: 200px;
+        height: 55px;
+    }
+    .contact .form_feedback #subject_field{
+        padding-left: 25px;
+        border-radius: 5px;
+        margin-top: 21px;
+        width: 200px;
+        height: 55px;
+    }
+    .contact .form_feedback #messages_field{
+        margin-top: 20px;
+        height: 76px;
+        width: 445px;
+        max-width: 446px;
+        border-radius: 5px;
+        padding-left: 25px;
+        padding-top: 20px;
+    }
+    .contact .button{
+        border-radius: 30px;
+        background-color:  #c3f37f;
+        margin-right: 45px;
+        margin-bottom: 71px;
+    }
+
     .contact .or{
         float: left;
         width: 10%;
