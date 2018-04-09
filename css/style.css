@@ -178,7 +178,6 @@
         font-size: 0.999em;
         font-weight: 400;
         text-align: left;
-        line-height: 2.2;
     }
     
     .destination {
@@ -764,14 +763,14 @@
         padding-left: 25px;
         padding-top: 20px;
     }
-    .contact .button{
+    .contact .button {
         border-radius: 30px;
         background-color:  #c3f37f;
         margin-right: 45px;
         margin-bottom: 71px;
     }
 
-    .contact .or{
+    .contact .or {
         float: left;
         width: 10%;
         font-family: Montserrat;
@@ -781,15 +780,118 @@
         line-height: 1.714;/* Приближение из-за подстановки шрифтов */
         text-align: center;
     }
-    .contact .info{
+    .contact .info {
         width: 45%;
         float: left;
         font-family: Lato;
         color:  #ffffff;
-        font-size: 2.764rem;/* Приближение из-за подстановки шрифтов */
         font-weight: 300;
-        text-align: center;
+        
+        
     }
-    .contact .clearfix{
+    .contact .info .heading {
+        font-size: 2.764rem;/* Приближение из-за подстановки шрифтов */
+    }
+    .contact .info .blocks_address {
+        margin-top: 64px;
+        line-height: 1.333;
+    }
+    .contact .info .blocks_address {
+          position: relative;
+    }
+    .contact .info .blocks_address div.address:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url(../img/home.png);
+        width: 13px;
+        height: 11px;
+        top: 5px;
+        left: -20px;
+    }
+    .contact .info .blocks_address .find {
+        font-family: Lato;
+        color:  #fff772;
+        font-size: 0.75rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: left;
+    }
+    .contact .info .phone {
+        margin-top: 19px;
+        position: relative;
+    }
+    .contact .info .phone span:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background:url(../img/user.png);
+        width: 13px;
+        height: 13px;
+        top: 4px;
+        left: -20px;
+    }
+    .contact .clearfix {
         clear:both;
+    }
+    .subscribe {
+        background: #b0e467;
+    }
+    .subscribe .text_block {
+        padding-left: 9.5%;
+        color: #ffffff;
+        font-weight: 400;
+        float: left;
+        width: 40.5%;
+        padding-bottom: 55px;
+    }
+    .subscribe .text_block .heading{
+        padding: 62px 0 13px 0;
+        font-family: ChunkFive;
+        font-size: 4.187rem;/* Приближение из-за подстановки шрифтов */
+    }
+    .subscribe .text_block .text{
+        font-family: Lato;
+        font-size: 0.999rem;
+        color: #ffffff;
+    }
+    .subscribe .form{
+        display: inline-block;
+        width: 45%;
+        padding-left: 5%;
+        position: relative;
+    }
+    
+    .subscribe .form input {
+        width: 441px;
+        height: 72px;
+        margin-top: 66px;
+        padding-left: 30px;
+        border-radius: 5px;
+        border: 1px solid #7ca83f;
+    }
+    .subscribe .clearfix {
+        clear:both;
+    }
+    .subscribe .form .button {
+        position: absolute;
+        top: 47px;
+        right: 174px;
+        width: 30px;
+        height: 23px;
+        background: #01a2a6;
+        border-radius: 5px;
+    }
+    .subscribe .form .button img {
+        padding-left: 8px;
+    }
+    footer{
+        height: 274px;
+        background-color:  #2f2933;
+        background: url(../img/mountains.png) #2f2933;
+    }
+    footer .documents{
+        font-family: Lato;
+        color:  #5d5b5b;
+        font-size: 0.749rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
     }
