@@ -201,15 +201,28 @@
     
     .destination .info .icon {
         margin-left: 8px;
+
     }
-    
+    .destination .info .icon, .destination .info .basic{
+    display: inline-block;
+    vertical-align: middle;
+    }
+    .destination .info .basic {
+        text-decoration: none;
+    }
+    .destination .info .basic:visited{
+        color: #aeaeae;
+    }
     .destination .text {
         padding: 0px 236px 67px 236px;
         width: 664px;
     }
-    
-    .destination .search {
-        margin: 0px 236px 0px 236px;
+    .destination form {
+      position: relative;
+      width: 300px;
+      margin: 0px 236px 0px 236px;
+    }
+    .destination input.search {
         padding-left: 10px;
         border-style: solid;
         border-width: 1px;
@@ -218,6 +231,30 @@
         background-color: #ffffff;
         width: 234px;
         height: 35px;
+    }
+    input {
+        outline:none;
+    }
+    .destination input.search:focus{
+        border: 1px solid #01a2a6;
+        border-radius: 30px;
+    }
+    .destination button {
+      height: 26px;
+      width: 26px;
+      position: absolute;
+      top: 4px;
+      right: 80px;
+      background: url(../img/Search.png) no-repeat;
+      background-position: 10px 5px;
+      cursor: pointer;
+      border: none;
+    }
+    .destination button.search:focus{
+        border: none;
+    }
+    .destination button.search:active{
+        border: none;
     }
     
     .destination .switch-place {
@@ -868,6 +905,9 @@
         padding-left: 30px;
         border-radius: 5px;
         border: 1px solid #7ca83f;
+        font-size: 16pt;
+        font-family: Lato;
+        font-style: italic;
     }
     .subscribe .clearfix {
         clear:both;
@@ -884,14 +924,63 @@
     .subscribe .form .button img {
         padding-left: 8px;
     }
-    footer{
-        height: 274px;
+    footer .wrap{
+        height: 249px;
         background-color:  #2f2933;
         background: url(../img/mountains.png) #2f2933;
+        padding-top: 25px;
     }
     footer .documents{
         font-family: Lato;
-        color:  #5d5b5b;
         font-size: 0.749rem;/* Приближение из-за подстановки шрифтов */
         font-weight: 400;
+        margin-left: 136px;
+    }
+    footer .documents li{
+        display: inline-block;
+        list-style-type: circle;
+        float: left;
+        
+    }
+    footer li a{
+        display: block;
+        text-decoration: none;
+        color:  #5d5b5b;
+    }
+    footer li a:visited{
+        color:  #5d5b5b;
+    }
+    footer .social_block {
+        float: right;
+        margin-right: 134px;
+    }
+    footer .social_block .social {
+        margin-left: 11px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url(../img/soc_icon_dark.png);
+    }
+    footer .social_block .social-fb {
+        background-position: 0px 0px;
+    }
+    footer .social_block .social-tw {
+        background-position: 70px 0px;
+    }
+    footer .social_block .social-insta {
+        background-position: 30px 0px;
+    }
+    footer .copyright{
+        margin-top: -13px;
+        font-family: Lato;
+        color:  #aeaeae;
+        font-size: 0.749rem;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 0.825;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    footer .line_color {
+        height: 18px;
+        margin-top: 3px;
+        background: linear-gradient(to right, #ffffa6 20%, #bdf271 20%, #bdf271 40%, #29d9c2 40%, #29d9c2 60%, #01a2a6 60%,#01a2a6 80%, #2f2933 80%);
     }
