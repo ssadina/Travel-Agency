@@ -45,11 +45,12 @@
             <h1 class="head light-green-text">Des<span class="color-green">tination</span></h1>
             <div class="info">
                 <img class="icon" src="img/info.png">
-                <span class="basic">see basic regulation</span>
+                <a href="#" class="basic">see basic regulation</a>
             </div>
             <p class="text">Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.</p>
             <form>
                 <input class="search" type="search" placeholder="search destination">
+                <button class="search" type="submit"></button>
             </form>
             <div class="switch-place">
                 <div class="all-place">ALL PLACE /</div>
@@ -214,23 +215,64 @@
                             <input type="text" name="company" id="company_field" placeholder="Company">
                             <input type="text" name="subject" id="subject_field" placeholder="Subject">
                             <textarea name="messages" id="messages_field" placeholder="Your Messages"></textarea>
-                            <input type="submit" name="send_message">
+                            <!--<input type="submit" name="send_message">
+                                лучше сделать полем или дивом?
+                            -->
                         </form>
+                        <div class="button">Send message</div>
                     </div>
                     <div class="or">
-                        <span>or</span>
+                        <span>OR</span>    <!--Как его выровнять посередине??-->
                     </div>
                     <div class="info">
-                        <div><span>You Can Find Us Here</span></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div class="heading"><span>You Can Find Us Here</span></div> 
+
+                         <!--Почему ткст так себя ведет? он ниже верхней границы блока-->
+                        <div class="blocks_address">
+                            <div class="address"><p class="address">Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang</p></div>
+                            <p class="find">FIND ON MAPS</p>
+                        </div>
+                        <div class="phone phone1"><span>(+62) 8816723812</span></div>
+                        <div class="phone phone2"><span>(+62) 8512371632</span></div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
-
         </section>
-        <footer></footer>
+        <section class="subscribe">
+            <div class="text_block">
+                <p class="heading">Keep in Touch</p>
+                <p class="text">We Will Give you latest information about Malang</p>
+            </div>
+            <div class="form">
+                <form>
+                    <input type="email" name="email" placeholder="Type Email Here for Subscribe">
+                </form>
+                <div class="button">
+                    <img src="img/Forward-white.png">
+                </div> <!--Как сделать скругленные края только на одной стороне?-->
+            </div>
+            <div class="clearfix"></div>
+        </section>
+        <footer>
+            <div class="wrap">
+                <div class="documents">
+                    <ul>
+                        <li><a href="">Term & Condition</a></li>  <!-- Почему не работают мареры?-->
+                        <li><a href="">Policy</a></li>
+                        <li><a href="">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="social_block">
+                    <a href="" class="social social-fb"></a>
+                    <a href="" class="social social-tw"></a>
+                    <a href="" class="social social-insta"></a>
+                </div>
+            </div>
+            <div class="copyright"><span>copyright@YokMalang. Allright Reserved. 2015</span></div>
+            <div class="line_color">
+                
+            </div>
+        </footer>
     </div>
 </body>
 
