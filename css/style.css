@@ -6,32 +6,44 @@
     body {
         font-family: sans-serif;
     }
-    
-    .container {
-        width: 1442px;
-        margin: 0 auto;
-    }
     @font-face{
         font-family: "ChunkFive";
         src: url("../fonts/ChunkFive.ttf");
     }
-
-    .slider {
+    .wrap {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .banner {
         height: 737px;
         background: #9bddd8 url(../img/Malang.jpg) no-repeat;
+        box-shadow: inset 3px 123px 198px -87px;
+        background-size: 100%;
+        background-position: 0 -0px;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+
+    .block_top {
+        
     }
     
-    .slider .header {
+    .block_top .header {
         padding: 35px 137px 0 137px;
         min-height: 86px;
         background-image: url(../img/shadow-top.png);
+        box-shadow: inset 0px 91px 92px -38px #79a4a4;
+}
     }
     
-    .slider .header .logo {
+    .block_top .header .logo {
         display: inline;
     }
     
-    .slider .header .logo a {
+    .block_top .header .logo a {
         text-decoration: none;
         font-family: Montserrat;
         color: #ffffff;
@@ -39,21 +51,21 @@
         font-weight: 400;
     }
     
-    .slider .header .logo .bold {
+    .block_top .header .logo .bold {
         font-weight: 700;
     }
     
-    .slider nav.main-menu {
+    .block_top nav.main-menu {
         display: inline-block;
         float: right;
         width: 700px;
     }
     
-    .slider nav.main-menu .profile {
+    .block_top nav.main-menu .profile {
         float: right;
     }
     
-    .slider nav.main-menu .profile-menu {
+    .block_top nav.main-menu .profile-menu {
         float: right;
         width: 10px;
         height: 10px;
@@ -61,16 +73,16 @@
         margin-top: 16px;
     }
     
-    .slider nav.main-menu .avatar {
+    .block_top nav.main-menu .avatar {
         border-radius: 50px;
     }
     
-    .slider nav.main-menu li {
+    .block_top nav.main-menu li {
         display: inline-block;
         list-style: none;
     }
     
-    .slider nav.main-menu a {
+    .block_top nav.main-menu a {
         height: 42px;
         padding: 15px 15px;
         margin-right: 25px;
@@ -83,18 +95,18 @@
         border: 3px solid transparent;
     }
     
-    .slider nav.main-menu li a:hover {
+    .block_top nav.main-menu li a:hover {
         border: 3px solid #ffffff;
         border-radius: 30px;
     }
     
-    .slider nav.main-menu .profile a {
+    .block_top nav.main-menu .profile a {
         display: inline-block;
         padding: 0;
         margin: -15px 0 0 0;
     }
     
-    .slider .slogan {
+    .block_top .slogan {
         clear: both;
         margin-top: 109px;
         font-family: ChunkFive;
@@ -102,7 +114,7 @@
         text-align: center;
     }
     
-    .slider .slogan h1 {
+    .block_top .slogan h1 {
         font-size: 5.005em;
         font-weight: 400;
     }
@@ -114,7 +126,7 @@
         color: #29d9c2;
     }
     
-    .slider .slogan .text-slogan {
+    .block_top .slogan .text-slogan {
         font-family: Lato;
         color: #fafafa;
         font-size: 1.125em;
@@ -122,11 +134,11 @@
         line-height: 2;
     }
     
-    .slider .button {
-        margin: 30px 609px;
-        background-color: #ffffa6;
+    .block_top .button {
         width: 222px;
-        height: 74px;
+        margin: 30px auto;
+        padding: 20px 30px;
+        background-color: #ffffa6;
         border-radius: 35px;
         -moz-border-radius: 35px;
         /* Firefox */
@@ -138,13 +150,14 @@
         font-size: 0.999em;
         font-weight: 900;
         outline: none;
+        text-align: center;
     }
     
-    .slider .button:hover {
+    .block_top .button:hover {
         background-color: #fbf6a3;
     }
     
-    .slider .button:active {
+    .block_top .button:active {
         background-color: #f5e99e;
     }
     
@@ -624,7 +637,7 @@
     }
     
    
-    .button {
+    .set_ittinery .button {
         float: right;
         border-radius: 30px;
         color: #fff;
