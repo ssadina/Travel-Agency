@@ -15,7 +15,8 @@
         width: 100%;
     }
     .banner {
-        height: 737px;
+        min-height: 500px;
+        max-height: 737px;                                        /*Почему не работает?*/
         background: #9bddd8 url(../img/Malang.jpg) no-repeat;
         box-shadow: inset 3px 123px 198px -87px;
         background-size: 100%;
@@ -27,7 +28,7 @@
     }
 
 
-    .block_top {
+    .block_top logo{
         
     }
     
@@ -36,11 +37,11 @@
         min-height: 86px;
         background-image: url(../img/shadow-top.png);
         box-shadow: inset 0px 91px 92px -38px #79a4a4;
-}
     }
     
+    
     .block_top .header .logo {
-        display: inline;
+        display: inline-block;
     }
     
     .block_top .header .logo a {
@@ -162,15 +163,13 @@
     }
     
     .about .box_about {
-        width: 1230px;
-        height: 380px;
         margin: -44px 135px 108px 135px;
         background-color: rgba(255, 255, 255, 0.9);
         background-size: 100%;
     }
     
     .about .city {
-        margin: 120px 97px 0 52px;
+        margin: 120px 97px 28px 52px;
         float: left;
     }
     
@@ -195,14 +194,17 @@
     
     .destination {
         background: #f2fefe;
+        position: relative;
     }
     
     .destination .head {
         display: inline-block;
-        padding: 69px 236px;
+        padding: 69px 10px 69px 236px;
     }
     
     .destination .info {
+        position: absolute;
+        right: 0;
         display: inline-block;
         float: right;
         margin: 92px 240px 0 0;
@@ -228,7 +230,6 @@
     }
     .destination .text {
         padding: 0px 236px 67px 236px;
-        width: 664px;
     }
     .destination form {
       position: relative;
@@ -292,7 +293,6 @@
     
     .destination .place-1 {
         position: relative;
-        width: 1170px;
         height: 517px;
         background-image: url(../img/batu.jpg);
         margin: 20px 135px 35px 135px;
